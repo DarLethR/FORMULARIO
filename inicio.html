@@ -8,5 +8,17 @@
 	<div id="map"></div>
 <script src="script.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=bcdfe3dbd16b048436c348d47df1a3a1e0146b3f936df7732485d0674be347c3=iniciarMap"></script>
+
+require 'google_search_results' 
+
+params = {
+  engine: "google_local",
+  q: "Emprender",
+  location: "New York, New York, United States",
+  api_key: "bcdfe3dbd16b048436c348d47df1a3a1e0146b3f936df7732485d0674be347c3"
+}
+
+search = GoogleSearch.new(params)
+local_results = search.get_hash[:local_results]
 </body>
 </html>
