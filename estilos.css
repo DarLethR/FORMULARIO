@@ -157,3 +157,10 @@ footer ul{
 footer .footer-left {
     justify-content: flex-start;
 }
+
+/* API DE GOOGLE */
+#map {
+	height: 500px;
+	width: 100%;
+}
+
